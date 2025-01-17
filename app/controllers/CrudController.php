@@ -11,7 +11,10 @@ class CrudController{
     public function AjoutHabitation() {
         $request = Flight::request();
         $idType = $request->query('idType');
+        $nbChambres = $request->query('nbChambres');
+        $loyer = $request->query('loyer');
+        $photo = $request->query('photo');
+        $quartier = $request->query('quartier');
 
     }
 }
-?>

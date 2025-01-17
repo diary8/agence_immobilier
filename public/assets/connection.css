@@ -1,0 +1,66 @@
+body
+{
+    background-color:cornsilk;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;   
+}
+.gauche
+{
+    width: 30%;
+    height: 100%;
+}
+.centre
+{
+    width: 40%;
+    height: 100%;
+    
+    height: 100vh;
+    background-image: url('/assets/images/11.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.put
+{
+    margin-top: 5vh;
+    width: 40vh;
+    height: 40vh;
+    text-align: center;
+}
+.password, .pseudo
+{
+    margin-top: 4.2vh;
+}
+.inputPassword , .inputEmail, .inputPseudo
+{
+    width: 100%;        
+    height: 5vh;          
+    font-size: 16px;              
+    border: 2px solid #ccc;      
+    border-radius: 8px;           
+    outline: none;                
+    background-color: #f9f9f9;    
+    transition: all 0.3s ease;
+}
+.button
+{
+    margin-top: 3.4vh;
+    background-color:red;
+    width: 20vh;
+    height: 4vh;
+    border-radius: 1vh;
+    margin-bottom: 3vh;
+}
+.droite
+{
+    width: 30%;
+    height: 100%;
+}

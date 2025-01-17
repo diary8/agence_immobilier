@@ -1,0 +1,207 @@
+.accueil
+{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-image: url('/assets/images/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.depot
+{
+    margin: 0;
+    padding: 0;
+    height: 90vh;   
+    background-image: url('/assets/images/1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list
+{
+  margin: 0;
+  padding: 0;
+  height: 90vh;   
+  background-color: lightblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;   
+    padding-top: 25vh;
+}
+.put
+{
+    margin-top: 5vh;
+    width: 40vh;
+    height: 40vh;
+    text-align: center;
+}
+.inputsolde
+{
+    width: 100%;        
+    height: 5vh;          
+    font-size: 16px;              
+    border: 2px solid #ccc;      
+    border-radius: 8px;           
+    outline: none;                
+    background-color: #f9f9f9;    
+    transition: all 0.3s ease;
+}
+.button
+{
+    margin-top: 3.4vh;
+    background-color:lightcoral;
+    width: 20vh;
+    height: 4vh;
+    border-radius: 1vh;
+    margin-bottom: 3vh;
+}
+.title
+{
+    color:darkred;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.gauche
+{
+    width: 30%;
+    height: 100%;
+}
+.centre
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.droite
+{
+    width: 30%;
+    height: 100%;
+}
+
+  /* Style du menu fixe */
+  .navbar {
+    background-color: lightgrey;     /* Changement de la couleur de fond du menu */
+    position: fixed;                 /* Fixe le menu en haut */
+    top: 0;
+    width: 100%;
+    z-index: 1000;                   /* S'assure que le menu est au-dessus du contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour un effet visuel */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;         /* Centre les éléments horizontalement */
+  }
+  
+  .navbar ul li {
+    margin: 0 30px;                  /* Augmenter l'espace entre les éléments */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;           /* Enlève la décoration par défaut des liens */
+    color: black;                    /* Couleur du texte */
+    font-size: 22px;                 /* Augmenter la taille de la police */
+    padding: 18px 25px;              /* Espacement autour du texte */
+    display: block;
+    transition: background-color 0.3s ease; /* Transition pour un effet au survol */
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;          /* Change la couleur de fond lors du survol */
+    border-radius: 4px;              /* Ajout d'arrondi sur le fond du lien */
+  }
+  
+  /* Espace pour éviter que le contenu soit caché sous le menu fixe */
+  body {
+    margin-top: 80px; /* Ajuste la marge pour compenser la hauteur du menu */
+  }
+  
+  /* Optionnel : Styles pour les éléments de la page, ajuster au besoin */
+  main {
+    padding: 20px;
+    min-height: 1500px;  /* Pour rendre la page suffisamment longue afin de voir le menu fixe en action */
+  }
+  
+
+.formulaire
+{
+  margin: 0;
+    padding: 0;
+    height: 90vh;   
+    background-image: url('/assets/images/3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inputsolde, .inputGarcon, .inputFille
+{
+    width: 100%;        
+    height: 5vh;         
+    color: black; 
+    font-size: 16px;              
+    border: 2px solid #ccc;      
+    border-radius: 8px;           
+    outline: none;                
+    background-color: #f9f9f9;    
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: large;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+td,th
+{
+  font-style: italic;
+  font-size: x-large;
+}
+.container-1
+{
+    width: 100%;
+    height: 100%;
+    display: flex;   
+}
+.gauche-1
+{
+    width: 30%;
+    height: 100%;
+}
+.centre-1
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color:white;
+    font-size: x-large;
+    font-style: italic;
+}
+.put-1
+{
+    width: 40vh;
+    height: 40vh;
+    text-align: center;
+}
+.droite-1
+{
+    width: 30%;
+    height: 100%;
+}

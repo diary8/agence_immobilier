@@ -10,7 +10,7 @@ class CrudModel
         $this->db = $var;
     }
     public function AjoutHabitation($idType,$nbChambres,$loyer,$photo,$quartier,$desc){
-        $sql = "INSERT INTO habitation(idType,nbChambre,loyer,photo,quartier,desc) VALUES(:idType,:nbChambres,:loyer,:photo,:quartier,:desc)";
+        $sql = "INSERT INTO habitation(idType,nbChambres,loyer,photo,quartier,desc) VALUES(:idType,:nbChambres,:loyer,:photo,:quartier,:desc)";
         $stt = $this->db->prepare($sql);
         $stt->execute([
             ':idType' => $idType,
