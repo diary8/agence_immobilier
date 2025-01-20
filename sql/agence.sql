@@ -5,18 +5,7 @@ CREATE TABLE Type(
     type VARCHAR(50),
 )
 
-CREATE TABLE habitation(
-    idHabitation INT PRIMARY KEY AUTO_INCREMENT ,
-    idType INT ,
-    nbChambre INT ,
-    loyer DECIMAL(10,2),
-    quartier VARCHAR(50),
-    photo VARCHAR(100),
-    desc VARCHAR(100),
-    FOREIGN KEY (idType) REFERENCES Type(idType)
-);
-CREATE TABLE client (
-    idClient INT PRIMARY KEY AUTO_INCREMENT ,
+CREATE TABLE habitation(u$è
     email VARCHAR(50),
     nom VARCHAR(50),
     mdp VARCHAR(50),
@@ -29,7 +18,8 @@ CREATE TABLE admin (
 );
 CREATE TABLE reservation (
     idReservation INT PRIMARY KEY AUTO_INCREMENT,
-    idClient INT ,
+    idClient INT ,*
+    +ù
     date_Entre DATETIME,
     date_Sortie DATETIME,
     FOREIGN KEY (idClient) REFERENCES client(idClient)

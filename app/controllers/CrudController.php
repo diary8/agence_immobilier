@@ -15,6 +15,8 @@ class CrudController{
         $loyer = $request->query('loyer');
         $photo = $request->query('photo');
         $quartier = $request->query('quartier');
-
+        $desc = $request->query('desc');
+        Flight::CrudModel()->AjoutHabitation($idType,$nbChambres,$loyer,$photo,$quartier,$desc);
+        
     }
 }
