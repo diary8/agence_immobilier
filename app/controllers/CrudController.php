@@ -18,6 +18,10 @@ class CrudController{
         $desc = $request->query['desc'];
         Flight::crudModel()->AjoutHabitation($idType,$nbChambres,$loyer,$photo,$quartier,$desc);
     }
+    public function AjoutForm(){
+        $data = ['page' => 'ajout'];
+        Flight::render('template',$data);
+    }
     public function ListHabitation(){
         $donnes = Flight::crudModel()->ListHabitation();
         $data = ['page' => 'list','donnes' => $donnes];

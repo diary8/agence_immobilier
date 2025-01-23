@@ -27,7 +27,8 @@ $router->get('/hello-world/@name', function($name) {
 $router->get('/',function (){
 	Flight::render('template',['page' => 'acceuil']);
 });
-$router->group('/list',function () use ($router,$app) {
+$router->group('/crud',function () use ($router,$app) {
 	$crudController = new CrudController($app);
-	$router->get('/habitat',[$crudController,'ListHabitation']);
+	$router->get('/list/habitat',[$crudController,'ListHabitation']);
+	$router->get('/ajout',[$crudController,'AjoutForm']);
 });
