@@ -70,9 +70,9 @@ return [
 	'database' => [
 		// uncomment the below 4 lines for mysql
 		 'host' => 'localhost',
-		 'dbname' => 'fbase',
+		 'dbname' => 'airbnb',
 		 'user' => 'root',
-		 'password' => 'root'
+		 'password' => ''
 
 		// uncomment the following line for sqlite
 		// 'file_path' => __DIR__ . $ds . '..' . $ds . 'database.sqlite'

@@ -25,6 +25,7 @@ class CrudModel
         $sql = "SELECT * FROM habitation";
         $stt = $this->db->prepare($sql);
         $stt->execute();
+        return $stt->fetchAll();
     }
     public function ModifierHabitation($idHabitation,$idType,$nbChambres,$loyer,$photo,$quartier,$desc){
         $sql = "UPDATE habitation SET idType = :idType AND nbChambre = :nbChambres AND loyer = :loyer AND photo = :photo AND quartier = :quartier AND desc = :desc WHERE idHabitation = :idHabitation";

@@ -1,40 +1,50 @@
 CREATE DATABASE airbnb;
 
-CREATE TABLE Type(
-    idTtype INT PRIMARY KEY AUTO_INCREMENT ,
-    type VARCHAR(50),
-)
-
-CREATE TABLE habitation(u$è
-    email VARCHAR(50),
-    nom VARCHAR(50),
-    mdp VARCHAR(50),
-    num INT 
+CREATE TABLE type(
+    idType INT PRIMARY KEY AUTO_INCREMENT ,
+    type VARCHAR(50)
 );
+
+
 CREATE TABLE admin (
     idAdmin INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(50),
     mdp VARCHAR(50)
 );
-CREATE TABLE reservation (
-    idReservation INT PRIMARY KEY AUTO_INCREMENT,
-    idClient INT ,*
-    +ù
-    date_Entre DATETIME,
-    date_Sortie DATETIME,
-    FOREIGN KEY (idClient) REFERENCES client(idClient)
-
+CREATE TABLE habitation(
+    idHabitation INT PRIMARY KEY AUTO_INCREMENT ,
+    idType INT,
+    nbChambre INT,
+    loyer DOUBLE,
+    quartier VARCHAR(50),
+    photo VARCHAR(50),
+    `desc` VARCHAR(100),
+    FOREIGN KEY (idType) REFERENCES type(idType)
 );
+
 CREATE TABLE photo (
     idPhoto INT PRIMARY KEY AUTO_INCREMENT,
     idHabitation INT ,
     photo VARCHAR(50),
-     FOREIGN KEY (idHabitation) REFERENCES habitation(idHabitation)
-
+    FOREIGN KEY (idHabitation) REFERENCES habitation(idHabitation)
 );
-
+CREATE TABLE client(
+    idClient INT PRIMARY KEY AUTO_INCREMENT ,
+    email VARCHAR(50),
+    nom VARCHAR(50),
+    mdp VARCHAR(50),
+    num INT 
+);
+CREATE TABLE reservation (
+    idReservation INT PRIMARY KEY AUTO_INCREMENT,
+    idClient INT ,
+    idHabitation INT,
+    date_Entre DATE,
+    date_Sortie DATE,
+    FOREIGN KEY (idClient) REFERENCES client(idClient)
+);
 -- Insérer des types d'habitation
-INSERT INTO Type (type) VALUES 
+INSERT INTO type (type) VALUES 
 ('Maison'),
 ('Appartement'),
 ('Studio');
