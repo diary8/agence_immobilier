@@ -1,23 +1,20 @@
-<h1>LISTE</h1>
 
-<table>
-    <tr>
-        <th>Type</th>
-        <th>Nombre de chambre</th>
-        <th>Loyer</th>
-        <th>Quartier</th>
-        <th>Description</th>
-        <th>Action</th>
-    </tr>
     <?php foreach($donnes as $habitat) { ?> 
-    <tr>
-        <td><?php echo $habitat['idType'] ;?></td>
-        <td><?php echo $habitat['nbChambre'] ;?></td>
-        <td><?php echo $habitat['loyer'] ;?></td>
-        <td><?php echo $habitat['quartier'] ;?></td>
-        <td><?php echo $habitat['desc'] ;?></td>
-        <td>Supp</td>
-    </tr>
+        <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="image1.jpg" alt="Maison 1">
+                    <div class="caption">
+                        <h4><?php echo $habitat['quartier'] ;?></h4>
+                        <p>Proposée par Annemien</p>
+                        <p><?php echo $habitat['loyer'] ;?> € par nuit</p>
+                        <p><?php echo $habitat['nbChambre'] ;?></p>
+                        <p>A titre d information :  <?php echo $habitat['desc'] ;?></p>
+                    </div>
+                </div>
+            </div>
     <?php } ?>
 
-</table>
+        
+        
+        
+       
