@@ -41,7 +41,8 @@ CREATE TABLE reservation (
     idHabitation INT,
     date_Entre DATE,
     date_Sortie DATE,
-    FOREIGN KEY (idClient) REFERENCES client(idClient)
+    FOREIGN KEY (idClient) REFERENCES client(idClient),
+     FOREIGN KEY (idHabitation) REFERENCES habitation(idHabitation)
 );
 -- Insérer des types d'habitation
 INSERT INTO type (type) VALUES 
